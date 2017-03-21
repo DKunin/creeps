@@ -1,0 +1,37 @@
+{
+  "name": "creeps",
+  "version": "1.0.0",
+  "description": "Get misc creepy names",
+  "license": "MIT",
+  "bin": "cli.js",
+  "main": "cli.js",
+  "author": {
+    "name": "Dmitri Kunin",
+    "email": "info@dkun.in",
+    "url": "dkunin.ru"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "creeps.json"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "bin",
+    "word",
+    "words",
+    "list",
+    "array",
+    "random",
+    "rand",
+    "creeps"
+  ],
+  "dependencies": {
+    "meow": "3.7.0",
+    "unique-random-array": "1.0.0"
+  }
+}
