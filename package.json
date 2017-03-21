@@ -1,10 +1,10 @@
 {
   "name": "creeps",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get misc creepy names",
   "license": "MIT",
   "bin": "cli.js",
-  "main": "cli.js",
+  "main": "index.js",
   "author": {
     "name": "Dmitri Kunin",
     "email": "info@dkun.in",

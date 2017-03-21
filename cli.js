@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-
 'use strict';
-
 var meow = require('meow');
 var creeps = require('./');
 
