@@ -1,6 +1,7 @@
 'use strict';
-var uniqueRandomArray = require('unique-random-array');
-var creeps = require('./creeps.json');
+
+const uniqueRandomArray = require('unique-random-array');
+const creeps = require('./creeps.json');
 
 module.exports = {
     all: creeps,

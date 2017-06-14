@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow');
-var creeps = require('./');
 
-var cli = meow({
+const meow = require('meow');
+const creeps = require('./');
+
+const cli = meow({
     help: [
         'Examples',
         '  $ creeps',
@@ -21,9 +22,12 @@ var cli = meow({
 });
 
 if (cli.flags.all) {
+    // eslint-disable-next-line
     console.log(creeps.all.join('\n'));
 } else if (cli.flags.next) {
+    // eslint-disable-next-line
     console.log(creeps.next(cli.flags.next));
 } else {
+    // eslint-disable-next-line
     console.log(creeps.random());
 }
