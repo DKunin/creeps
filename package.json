@@ -1,22 +1,43 @@
 {
   "name": "creeps",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Get misc creepy names",
   "license": "MIT",
-  "bin": "cli.js",
+  "bin": {
+    "creeps": "./cli.js"
+  },
   "main": "index.js",
+  "type": "commonjs",
   "author": {
     "name": "Dmitri Kunin",
     "email": "info@dkun.in",
-    "url": "dkunin.ru"
+    "url": "https://dkunin.ru"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DKunin/creeps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DKunin/creeps/issues"
+  },
+  "homepage": "https://github.com/DKunin/creeps#readme",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=20.19.0"
   },
   "scripts": {
-    "test": "ava"
+    "check": "npm run lint && npm test",
+    "lint": "eslint .",
+    "link:global": "npm link",
+    "pack:dry": "npm pack --dry-run",
+    "password": "node cli.js password",
+    "prepublishOnly": "npm run check",
+    "start": "node cli.js",
+    "test": "node --test test.js",
+    "unlink:global": "npm unlink --global creeps"
   },
   "files": [
+    "CHANGELOG.md",
+    "readme.md",
     "index.js",
     "cli.js",
     "creeps.json"
@@ -33,11 +54,8 @@
     "rand",
     "creeps"
   ],
-  "dependencies": {
-    "meow": "3.7.0",
-    "unique-random-array": "1.0.0"
-  },
   "devDependencies": {
-    "ava": "0.19.1"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0"
   }
 }
