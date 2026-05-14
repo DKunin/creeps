@@ -4,7 +4,7 @@
   "description": "Get misc creepy names",
   "license": "MIT",
   "bin": {
-    "creeps": "./cli.js"
+    "creeps": "cli.js"
   },
   "main": "index.js",
   "type": "commonjs",
